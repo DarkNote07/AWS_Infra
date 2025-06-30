@@ -29,3 +29,7 @@ variable "subnet_private" {
 variable "privtsb" {
   type = string
 }
+
+variable "proute" {
+  type = string
+}

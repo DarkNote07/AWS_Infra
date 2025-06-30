@@ -29,3 +29,7 @@ variable "psb" {
 variable "privtsb" {
   type = string
 }
+
+variable "proute" {
+  type = string
+}

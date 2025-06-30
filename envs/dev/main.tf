@@ -8,4 +8,5 @@ module "vpc" {
   psb            = var.psb
   subnet_private = var.subnet_private
   privtsb        = var.privtsb
+  proute         = var.proute
 }
