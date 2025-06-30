@@ -55,3 +55,20 @@ resource "aws_route_table" "public_route_table" {
   }
 }
 
+resource "aws_nat_gateway" "example" {
+
+  count = 2
+
+  allocation_id = aws_eip.lb[count.index].id
+  subnet_id     = aws_subnet.private[count.index].id
+
+  tags = {
+    Name = "gw NAT"
+  }
+}
+
+resource "aws_eip" "lb" {
+  count = 2
+  domain   = "vpc"
+}
+

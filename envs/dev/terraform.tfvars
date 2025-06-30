@@ -5,5 +5,5 @@ subnet_public  = ["10.0.1.0/24", "10.0.2.0/24"]
 subnet_private = ["10.0.3.0/24", "10.0.4.0/24"]
 az             = ["eu-west-1a", "eu-west-1b"]
 psb            = "Main Public Subnet"
-privtsb = "Main Private Subnet"
-proute = "Internet Route Table"
+privtsb        = "Main Private Subnet"
+proute         = "Internet Route Table"
